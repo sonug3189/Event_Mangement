@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>DBMS</title>
+ <link rel="icon" href="event-wale.png">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <!-- customized google fonts for main logo -->
+  <link href="https://fonts.googleapis.com/css?family=Monoton&text" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Assistant:200|Lato" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="" rel="stylesheet">
+  <style type="text/css">
+   
+    body {
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+}
+
+main {
+  min-height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  color: #c6e2ff;
+}
+
+.arrowdown {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  margin-left: -15px;
+  animation: down 1550ms ease-in-out infinite;
+}
+
+.arrowdown a {
+  color: #ffca28;
+}
+/* arrrow down key animations */
+
+@keyframes down {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+}
+
+.gradientbox {
+  height: 400px;
+  width: 800px;
+  background-image: linear-gradient(90deg, #f50057 0%,#242323 35%, #00b0ff 60%, #76ff03  100%);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.subheading {
+  background-color: black;
+  z-index: 5;
+  font-size: 25px;
+  font-family: 'Assistant', sans-serif;
+  margin-top: -17px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.logo {
+  background-color: black;
+  background: radial-gradient(ellipse at center,  #0a2e38  0%, #000000 70%);
+  height: 390px;
+  width: 790px;
+  font-family: Monoton, cursive;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  animation: neon 900ms ease-in-out infinite alternate;
+  animation-delay: 100ms;
+  font-size: 200px;
+  pointer-events: none;
+}
+
+/*animation keyframes*/
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0);
+  }
+  12% {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1.5),  0 0 20px rgba(10, 175, 230, 1);
+  }
+  18% {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1),  0 0 20px rgba(10, 175, 230, 0.2);
+  }
+  25% {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 0.9),  0 0 20px rgba(10, 175, 230, 0.3);
+  }
+  35% {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 0.8),  0 0 20px rgba(10, 175, 230, 0.1);
+  }
+  42% {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1.2),  0 0 20px rgba(10, 175, 230, 0);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1.6),  0 0 20px rgba(10, 175, 230, 1);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(10, 175, 230, 1.6),  0 0 20px rgba(10, 175, 230, 1);
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <main>
+
+        <div class="img1">
+     <img src="event-wale.png" style="height: 150px; width: 150px; padding:30px; margin-top: -140px; ">
+       </div>
+    <div class="gradientbox">
+      <div class="logo">
+        EMS
+      </div>
+    </div>
+    <div class="subheading">
+        Event Management System
+    </div>
+    <div class="arrowdown">
+       <a href="main3.html"> <i class="fa fa-angle-double-right fa-3x" aria-hidden="true"> </i></a>
+    </div>
+  </main>
+</body>
+</html>

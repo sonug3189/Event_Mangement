@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DBMS</title>
+ <link rel="icon" href="event-wale.png">
+<style type="text/css">
+#event
+{
+	width: 100%;
+	height: 400px;
+}
+#header1
+{
+width:100%;
+height:120px;
+background-color:red;
+margin:0;
+text-align: center;
+
+}
+ul li button
+{
+	text-decoration: none;
+	color: red;
+	font-size: 20px;
+}
+ul li
+{
+    list-style-type: none;
+   float: left;
+   width:320px;
+   height:40px;
+   text-align: center;
+   background-color: lightblue;	
+   border:6px solid grey;
+   margin-top: 70px;
+   margin-left: -40px;
+  }
+
+.shaded
+{
+    
+	width: 99%;
+	 height: 700px; 
+	 border: 10px solid black;
+	 background-image: url(shade.jpg);
+	 margin-top: 160px;
+
+}
+#shaded1
+{
+    
+  width: 99%;
+   height: 100px; 
+   border: 7px dashed red;
+   background-color: lightblue;
+
+}
+#em
+{
+	margin-top: -200px;
+	font-size: 60px;
+	margin-left: 50px;
+	font-family: 'Courgette', cursive;
+	color:white;
+}
+
+#LOGIN
+{
+text-align: center;
+display: none;
+}
+#img
+{
+ display: none;
+ cursor: pointer;
+ 
+}
+#about
+{
+	display: none;
+}
+#contact
+{
+	margin-top: 150px;
+	text-align: center;
+	display: none;
+	color: white;
+}
+#custreg
+{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-top: 60px;
+	display: none;
+	
+}
+#customer
+{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-top: 60px;
+	display: none;
+}
+#admin
+{
+	text-align: center;
+	color: white;
+	font-size: 20px;
+	margin-top: 60px;
+	display: none;
+}
+#video
+{
+	width: 100%;
+	height: 400px;
+}
+</style>
+
+
+<script type="text/javascript">
+	function login()
+	{
+    document.getElementById('home').style.display="none";
+    document.getElementById('img').style.display="none";
+    document.getElementById('about').style.display="none";
+    document.getElementById('contact').style.display="none";
+		document.getElementById('LOGIN').style.display="block";
+	}
+	function image()
+	{
+    document.getElementById('home').style.display="none";
+    document.getElementById('about').style.display="none";
+    document.getElementById('contact').style.display="none";
+    document.getElementById('LOGIN').style.display="none";
+   document.getElementById('img').style.display="block";
+	}
+    function about()
+    {
+      document.getElementById('home').style.display="none";
+    document.getElementById('img').style.display="none";
+    document.getElementById('contact').style.display="none";
+    document.getElementById('LOGIN').style.display="none";
+    	document.getElementById('about').style.display="block";
+    }
+    function contact()
+    {
+      document.getElementById('home').style.display="none";
+    document.getElementById('img').style.display="none";
+    document.getElementById('about').style.display="none";
+    document.getElementById('LOGIN').style.display="none";
+     document.getElementById('contact').style.display="block";
+    }
+    function custreg()
+    {
+    	document.getElementById('LOGIN').style.display="none";
+    	document.getElementById('custreg').style.display="block";
+    }
+      function customer()
+    {
+    	document.getElementById('LOGIN').style.display="none";
+    	document.getElementById('customer').style.display="block";
+    }
+    function admin()
+    {
+         document.getElementById('LOGIN').style.display="none";
+    	document.getElementById('admin').style.display="block";	
+    }
+</script> 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jquerycycle.js">
+  </script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+  $('#img').cycle('turnLeft');
+  });
+
+  </script>
+</head>
+<body>
+  <img src="event.jpg" id="event">
+
+<h1 id="em"> Events Management</h1>
+</div>
+<div id="navbar">
+<ul>
+<li><button>HOME</button></li>
+<li><button onclick="about()" >ABOUT US</button></li>
+<li><button onclick="image()">PHOTOS</button></li>
+<li><button onclick="contact()">CONTACT US</button></li>
+<li><button onclick="login()">LOGIN</button></li>
+</ul>
+</div>
+<div class="shaded">
+   
+  <div id="LOGIN">
+   <img src="admin.jpg"  style="width: 250px; height: 250px;" onclick="admin()">
+   <img src="customer.jpg" style="width: 250px; height: 250px; margin-top: 100px; margin-left: 100px;" onclick="customer()">
+   <img src="customer1.png" style="width: 250px; height: 250px; margin-left: 100px;" onclick="custreg()">
+   </div>
+  <div id="img">
+     <img src="front.jpg" style="width:1660px; height:700px;"></img>
+     <img src="img1.jpg" style="width:1660px; height:700px;"></img>
+     <img src="img2.jpg" style="width:1660px; height:700px;"></img>
+     <img src="img3.jpg" style="width:1660px; height:700px;"></img>
+     <img src="img4.jpg" style="width:1660px; height:700px;"></img>
+    <img src="img5.jpg" style="width:1660px; height:700px;"></img>
+ </div>
+   <div id="about">
+         <img src="aboutimg.jpg" style="width:1660px; height:300px;"></img>
+
+   	    <h1 style="font-size: 35px; text-align: center;">Event Management System</h1>
+   	    <p style="font-size: 25px; color: white;">&nbsp;&nbsp;Since establishing Avenues Event Management in 1990, Melanie Walker and the team have organised a wide and varied range of events – international and national conferences,  dinners for two thousand, product launches and indoor/outdoor concerts that have catered  for up to twenty thousand people.<br> 
+
+  &nbsp;&nbsp;We are a company that manages an event to achieve a stated goal as determined by  the client. We will come up with ideas, develop a critical path, write a budget for an event, seek sponsorship and provide a series of  experts in various fields of entertainment, education, design, strategic  planning, food & beverage, presentation and copy writing, or whatever is required.<br> 
+
+&nbsp;&nbsp;Avenues Event Management works with individuals and companies or as part of a committee.  We are happy to act as sole organiser or become part of  the steering team. We can provide all of the ideas or become another resource in  a brainstorming team. In all cases we undertake the  responsibility and management of the day to day minutiae that go into organising any event</p>
+   </div>
+
+  <div id="contact">
+       <h2>You can email us at: info@avenues.com</h2>
+       <p style="font-size: 30px;">Contact no: 9982646627,9892883726</p>
+      <a href="https://google.com"><img src="google.png" style="width:100px; height:100px; padding: 20px;"></a>
+      <a href="https://facebook.com"><img src="facebook.png" style="width:100px; height:100px;  padding: 20px;"></a>
+      <a href="https://twittor.com"><img src="twittor.png" style="width:100px; height:100px;  padding: 20px;"></a>
+   	</div>
+
+   	<div id="home">
+   		  
+   	</div>
+   	<div id="custreg">
+   		  <h1> Customer Registration</h1><br>
+        <form action="custreg.php" method="POST">
+   		  User id:<input type="text" name="user"><br><br>
+   		  Name:<input type="text" name="name"><br><br>
+   		  Address:<textarea name="ta"></textarea><br><br>
+   		  Mobile No:<input type="text" name="mobno"><br><br>
+   		  Date Of Birth:<input type="Date" name="dob"><br><br>
+   		  Email:<input type="email" name="email"><br><br>
+   		  Password:<input type="Password" name="Password"><br><br>
+   		  Confirm Password: <input type="Password" name="Password1"><br><br>
+   		  <button name="Submit">Submit</button>
+   		  <button>Cancel</button>
+      </form>
+    </div>
+       	<div id="customer">
+   		  <h1> Customer Login</h1><br>
+   		  User id:<input type="text" name="user"><br><br>
+   		  Password:<input type="Password" name="Password"><br><br>
+          <button><a href="third.html">Submit</a></button>
+   		  <button>Cancel</button>
+    </div>
+         <div id="admin">
+         <form>
+   		  <h1> Admin Login</h1><br>
+   		  User id:<input type="text" name="user"><br><br>
+   		  Password:<input type="Password" name="Password"><br><br>
+          <button><a href="fourth.html">Submit</a></button>
+   		  <button>Cancel</button>
+        </form>
+    </div>
+</div>
+
+<div id="shaded1">
+     <h1 style="text-align: center; font-size: 40px;"><marquee> welcome to event booking system</marquee></h1>
+</div>s
+</body>
+</html>

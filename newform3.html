@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	 <style type="text/css">
+	 	body
+	 	{
+	 		margin: 0;
+	 		padding: 0;
+	 		background:url("bgl.jpg");
+	 	     display: flex;
+	       justify-content: space-around;
+            align-items: center;
+	 	}
+	 	.main
+	 	{
+	 		width: 40%;
+	 		height: 600px;
+	 		border-radius: 20px;
+	 		margin-top: 60px;
+	 		background-color:#DCDCDC;
+	 		opacity:0.5;
+
+	 	}
+	 	#custreg
+{
+	text-align: center;
+	color: black;
+	font-size: 20px;
+  margin-top: -25px;
+	
+}
+
+	 </style>
+</head>
+<body>
+      <div class="main">
+      	    <div id="custreg">
+   		  <h1 style="padding-top: 30px;"> Customer Registration</h1><br>
+        <form action="custreg.php" method="POST">
+   		    Name:<input type="text" name="name" required><br><br>
+   		    Address:<textarea name="ta" required></textarea><br><br>
+   		    Mobile No:<input type="text" name="mobno" required><br><br>
+   		    Date Of Birth:<input type="Date" name="dob" required><br><br>
+   		    Email:<input type="email" name="email" required><br><br>
+   		    Password:<input type="Password" name="Password" required><br><br>
+   		    Confirm Password: <input type="Password" name="Password1" required><br><br>
+   		    <button type="Submit" name="submit" >Submit</button>
+   		    <button>Cancel</button>
+      </form>
+    </div>
+       
+      </div>
+</body>
+</html>
+

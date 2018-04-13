@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>fadaed clolt</title>
+	 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+   <script type="text/javascript">
+</script>
+<style type="text/css">
+	.pop-outer
+	{
+		background-color: rgba(0,0,0,0.5);
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.pop-inner
+	{
+		background-color: #fff;
+		width: 500px;
+		height: 300px;
+		padding:25px;
+		margin: 15% auto;
+	}
+</style>
+<script type="text/javascript">
+	 $(document).ready(function(){
+	 	$(".open").click(function(){
+	 		$(".pop-outer").fadeIn('slow');
+	 	});
+
+	 	 	$(".close").click(function(){
+	 		$(".pop-outer").fadeOut('slow');
+	 	});
+
+	 });
+</script>
+</head>
+<body>
+     <button class="open"> click to open popup</button>
+      <div style="display: none;" class="pop-outer">
+      	  <div class="pop-inner">
+      	    <button class="close">X</button>
+      	  	 <h2>sonu kumar gupta</h2>
+      	  	 <p> hdj sanb nbasbsvjvs  hgv ssnbcgvs cncbxghs bnwvdhdg</p>
+      	  </div>
+      </div>
+</body>
+</html>

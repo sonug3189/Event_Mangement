@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DBMS</title>
+ <link rel="icon" href="event-wale.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+
+body
+{
+		width: 100%;
+ 		height: auto;
+ 		margin: 0px;
+ 		padding: 0px;
+		overflow: auto;
+     background-image:url("bg.jpg");
+	  background-size:contain;
+ background-position:center;
+}
+ .jnav{
+ 		width: 100%;
+    padding: 0px;
+    margin:0;
+ 		overflow:hidden;
+    background-color: rgba(0, 255, 255,.5);
+    position: fixed;
+    z-index: 999;
+ 	}
+  .jnav li{
+      flex-shrink: none;
+    margin:0px 7px;
+    padding:10px;
+    height: 100%;
+      float: right;
+  }
+  
+  .jnav li a{
+     
+     height:100%;
+     margin:3px;
+  }
+  .jnav li:hover{
+    background-color: #f5f5f5;
+  }
+ 	.janv_img
+ 	{
+ 		height: 100%;
+ 		width: 20px;
+ 	}
+ 
+ 	.jnav_item{
+ 		color: black;
+ 		height:100%;
+ 	}
+ 	
+ 	
+ 	.jnav_linktag{
+ 		text-decoration: none;
+ 		color: white;
+ 	}
+ 
+
+.wcsa
+{
+	color: #00BFFF;
+	font-size: 25px;
+	position: relative;
+	animation-name: wcsa;
+	animation-duration: 5s;
+	animation-iteration-count: 4;
+
+}
+@keyframes wcsa
+{
+from{transform: translate(-800px)}
+to{transform: translate(800px)}
+}
+.right
+{
+	margin-top: -400px;
+	margin-left: 1100px;
+
+}
+.left
+{
+	margin-top: 50px;
+	margin-left: 100px;
+	font-size: 30px;
+	color: rgba(300,200,100,100);
+}
+
+.arrowdown1 {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  font-size: 100px;
+  margin-left: -15px;
+  animation: down 1550ms ease-in-out infinite;
+}
+
+.arrowdown1 a {
+  color: #ffca28;
+}
+/* arrrow down key animations */
+
+@keyframes down {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(20px);
+  }
+}
+.element {
+	 margin-left: 650px;
+   margin-top: -300px;
+   border-radius: 50%;
+   width: 260px;
+   height: 260px;
+   box-shadow: 0px 0px 9px 5px #00FF00;
+   animation: glowShadow 1.5s linear infinite alternate;
+}
+
+#img1 {
+  width: 100%;
+  height: 100%;
+  animation: glowImage 1.5s linear infinite alternate;
+}
+
+@keyframes glowShadow{
+  to {
+    box-shadow: 0px 0px 35px 15px #00FF00;
+  }
+}
+
+@keyframes glowImage{
+  to {
+    -webkit-filter: brightness(2);
+     filter: brightness(2);
+  }
+}
+#about
+{
+   height: 300px;
+   width: 100%
+   background-color:transparent;
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+  transition: all 0.5s;
+  opacity:0.5;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 0.5;
+  right: 0;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jquerycycle.js">
+  </script>
+   <script type="text/javascript">
+   $(document).ready(function(){
+  $('#img').cycle('turnLeft');
+  });
+
+  </script>
+</head>
+<body>
+
+<div id="home" >
+
+	<div style="margin:0;padding: 0;">
+	    <h3 style="float: left; color: white; margin-top: -1px; position: fixed;"> Event Management</h3>
+             <ul style="list-style-type: none;" class="jnav">
+        		 <li class="jnav_li"><a class="jnav_linktag" href="#Contact"> Contact</a></li>
+        		 <li class="jnav_li"><a class="jnav_linktag" href="#image"> Gallery</a></li>
+        		 <li class="jnav_li"><a class="jnav_linktag" href="#About"> About</a></li>
+        		 <li class="jnav_li"><a class="jnav_linktag" href="#home"> Home</a></li>
+
+        	</ul>
+  
+ 	</div>
+ 		
+ 		<br><br><br>
+ 		
+     <div class="wcsa">
+	<center><h1>WELCOME TO EVENTZ--WALE </h1></center>
+	</div>
+
+    <div class="left">
+ 	   <h2><u><i>EVENTS</i></u></h2>
+
+ 	   <a href="marriage.php"><button class="button" style="color: blue;  font-size: 25px;"><span>Marriage</span></button></a><br>
+ 	   <a href="bday.php"><button class="button" style="color: blue;  font-size: 25px;"><span>Birthday Party </span></button></a><br>
+ 	   <a href="anniversary.php"><button class="button" style="color: blue;  font-size: 25px;"><span>Anniversary Party</span></button></a><br>
+ 	   <a href="newyear.php"><button class="button"  style="color: blue;  font-size: 25px;"><span>New Year Party</span></button></a><br>
+ 	   <a href="farewall1.php"><button class="button"  style="color: blue;  font-size: 25px;"><span>Farewell Party</span></button></a><br>
+ 	   <!--<button class="button"  style="color: blue;  font-size: 25px;"><span>College Party</span></button><br> -->
+  </div>
+  <div class="right">
+  
+  	  <button><a href="newform2.html"><img src="admin1.png" style="width:200px; height: 80px; background-color:red;"></a></button><br>
+   
+   <br><br>
+  	  <button ><a href="newform3.html"><img src="reg.jpg" style="width:200px; height: 80px;"></a></button><br>
+  	<br>
+  	  <b style="font-size: 20px;">Already have an account?</b><br>
+  	   	<br>   <button type="submit"><a href="newform1.html"><img src="customer3.gif" style="width:200px; height: 80px; "></a></button><br>
+  	   <a href="forget.php" style="margin-left: 100px; color: red; font-size: 16px;">Forgot Password</a>
+  	   
+  </div>
+    <div class="element">
+  <img src="event-wale.png" id="img1">
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div style="background: red; height: 30px; width: 100%; border: 5px solid black;"></div>
+<div id="About">
+         <div style="height: 480px; width: 100%; background-color: lightblue; margin-top: -20px;">
+         	<h1 style="font-family: monoton ,cursive; padding: 20px;"><center>ABOUT US</center></h1>
+         	<img src="event1.jpg" style="width: 400px; height: 70%; padding-left: 40px;  float: left; border-radius: 40px;">
+         	 	    <p style="font-size: 25px; color: white; padding-left: 500px;">&nbsp;&nbsp; &nbsp;&nbsp;Since establishing Avenues Event Management in 1990, Melanie Walker and the team have organised a wide and varied range of events – international and national conferences,  dinners for two thousand, product launches and indoor/outdoor concerts that have catered  for up to twenty thousand people.<br> 
+
+  &nbsp;&nbsp;&nbsp;&nbsp;We are a company that manages an event to achieve a stated goal as determined by  the client. We will come up with ideas, develop a critical path, write a budget for an event, seek sponsorship and provide a series of  experts in various fields of entertainment, education, design, strategic  planning, food & beverage, presentation and copy writing, or whatever is required.<br> 
+</p>
+  
+         </div>
+ </div>
+  <div style="background: red; height: 30px; width: 100%; border: 5px solid black;"></div>
+ <div id="Contact">
+ 	  <div style="height: 400px; width: 100%; background-color: lightblue; margin-top: -20px;">
+        <h1 style="font-family: monoton ,cursive; padding: 20px;"><center>CONTACT US</center></h1>
+       
+       
+            <div class="box">
+               <a href="https://www.facebook.com">
+               <img src="fb.png" style="height:100px; width: 100px ;  margin-left: 400px;"> </a>
+            </div>
+        
+               <div class="box ">
+                 <a href="https://www.instagram.com/sonu3189/">
+              <img id="icn" src="instragram.png" style="height: 100px; width: 100px; margin-left: 600px; margin-top: -100px; "></a>
+          
+            </div>
+
+             <div class="box ">
+           <a href="https://twitter.com">
+              <img id="icn" src="twitter.png" style="height: 100px; width: 100px;  margin-left: 800px; margin-top: -150px;" >
+              </a>
+            </div>
+        
+            <div class="box ">
+           <a href="https://google.com">
+              <img id="icn" src="google.svg" style="height: 100px; width: 100px; margin-left: 1000px; margin-top: -200px;">
+              </a>
+            </div>
+        <div style="padding-top: 20px; font-size: 20px;">
+        <center>
+        	<b>More info::</b><br>
+        	     Contact no : 9985641656,9874825531<br>
+        	     Email : sonug3189@gmail.com<br>
+        	     </center>
+        </div>
+      
+</div>
+ </div>
+  <div style="background: red; height: 30px; width: 100%;border: 5px solid black;"></div>
+  <div id="image" style="background:yellow; height: 750px; width: 100%; margin-top: -20px; ">
+      <h1 style="font-family: monoton ,cursive; padding: 20px;"><center>GALLERY</center></h1>
+      <div>
+  <div id="img">
+     <img src="front.jpg" style="width:1700px; height:700px;">
+     <img src="img1.jpg" style="width:1700px; height:700px;"></img>
+     <img src="img2.jpg" style="width:1700px; height:700px;"></img>
+     <img src="img3.jpg" style="width:1700px; height:700px;"></img>
+     <img src="img4.jpg" style="width:1700px; height:700px;"></img>
+    <img src="img5.jpg" style="width:1700px; height:700px;"></img>
+    <img src="img6.jpg" style="width:1700px; height:700px;"></img>
+    <img src="img7.jpg" style="width:1700px; height:700px;"></img>
+ </div>
+ </div>
+   <div style="background: red; height: 30px; width: 100%; border: 5px solid black;"></div>
+</body>
+</html>
